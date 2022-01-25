@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yasikuiux.loginautnetication.ui.activity.PhoneAuth">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="#000000"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/color_secondary"
+            android:gravity="left"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/sfuidisplaybold"
+            android:text="Verify your "></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_secondary"
+            android:gravity="left"
+            android:fontFamily="@font/sfuidisplaybold"
+            android:text="phone number"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/color_secondary"
+            android:gravity="left"
+            android:fontFamily="@font/sfuiregul"
+            android:text="We have sent you an SMS with a code to number +91 123456789"></TextView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/backgroundgrey"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_textSize="16sp" />
+
+            <EditText
+                android:textColorHint="#787878"
+                android:textColor="#000"
+                android:id="@+id/edit_text_mobile_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyEditText"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:layout_marginRight="10dp"
+                android:hint="Enter your mobile number"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:textColor="#ACB1C0"
+                android:gravity="center"
+                android:fontFamily="@font/sfuiregul"
+                android:text="Or login with "></TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:textColor="@color/color_primary"
+                android:gravity="center"
+                android:fontFamily="@font/sfuiregul"
+                android:text="Social network"></TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_primary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/sfuisemibold"
+            android:gravity="center"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="17sp"></TextView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

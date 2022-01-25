@@ -1,0 +1,3 @@
+
+rootProject.name = "Loginautnetication"
+include ':app'
